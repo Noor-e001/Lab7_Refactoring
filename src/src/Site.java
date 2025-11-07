@@ -8,8 +8,12 @@ public class Site {
     }
 
     public double getBillableAmount() {
-        double base = units * rate;
+        double base = getBaseAmount();
         double tax = base * 0.05;
         return base + tax;
+    }
+
+    private double getBaseAmount() {
+        return units * rate;
     }
 }
