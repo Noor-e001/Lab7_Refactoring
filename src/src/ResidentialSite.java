@@ -6,7 +6,7 @@ public class ResidentialSite extends Site {
 
     @Override
     public double getBillableAmount() {
-        double base = super.getBillableAmount();
+        double base = units * rate;
         double discount = base * 0.10;
         return base - discount;
     }

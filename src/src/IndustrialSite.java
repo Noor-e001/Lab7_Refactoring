@@ -6,7 +6,7 @@ public class IndustrialSite extends Site {
 
     @Override
     public double getBillableAmount() {
-        double base = super.getBillableAmount();
+        double base = units * rate;
         double surcharge = base * 0.15;
         return base + surcharge;
     }

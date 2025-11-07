@@ -1,6 +1,6 @@
 public class Site {
-    private double units;
-    private double rate;
+    protected double units;
+    protected double rate;
 
     public Site(double units, double rate) {
         this.units = units;
